@@ -61,7 +61,6 @@ body {
 
 ul li {
   list-style: none;
-  list-style-position: inside !important;
 }
 
 #main-page ul li::before {
