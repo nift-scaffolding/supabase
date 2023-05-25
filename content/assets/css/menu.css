@@ -28,11 +28,6 @@ nav ul {
   position: relative;
 }
 
-nav ul li {
-  list-style: none;
-  list-style-position: inside !important;
-}
-
 nav a {
   font-size: 15pt;
   color: white;
