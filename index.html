@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>supabase scaffolding - index</title>
+		
+		<meta name="description" content="">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.css">
+		<link rel="stylesheet" href="assets/css/menu.css">
+	</head>
+
+	<body>
+		<div align="center">
+			<div class="menu-bars">
+			  <i id="open-menu-icon" class="fa fa-bars fa-primary-color" onclick="show_menu()"></i>
+			</div>
+			
+			<div id="menu-page">
+			  <div class="menu-cross" >
+			    <i id="close-menu-icon" class="fa fa-xmark fa-primary-color" onclick="close_menu()"></i>
+			  </div>
+			
+			  <a href="auth/sign-up/" id="sign-up-link"><button>sign up</button></a>
+			  <a href="auth/sign-in/" id="sign-in-link"><button>sign in</button></a>
+			  <button id="sign-out-button" onclick="signOut()">sign out</button>
+			  <a href="auth/details/"><button>details</button></a>
+			  
+			  <nav id="nav" class="noselect">
+			    <ul>
+			      <li class="item li-menu li-dark">
+			        <a class="item-link" href="./">home</a>
+			      </li>
+			      <li class="item li-menu li-dark has-submenu">
+			        <button class="submenu-link" onclick="toggle_submenu(0)">submenu</button>
+			        <ul class="submenu" align="center">
+			          <li class="subitem"><a href="#">example</a></li>
+			          <li class="subitem"><a href="#">example</a></li>
+			          <li class="subitem"><a href="#">example</a></li>
+			          <li class="subitem"><a href="#">example</a></li>
+			        </ul>
+			      </li>
+			      <li class="item li-menu li-dark has-submenu">
+			        <button class="submenu-link" onclick="toggle_submenu(1)">submenu</button>
+			        <ul class="submenu" align="center">
+			          <li class="subitem"><a href="#">example</a></li>
+			          <li class="subitem"><a href="#">example</a></li>
+			          <li class="subitem"><a href="#">example</a></li>
+			          <li class="subitem"><a href="#">example</a></li>
+			        </ul>
+			      </li>
+			    </ul>
+			  </nav>
+			</div>
+
+			<div id="main-page">
+				<h1>Supabase Scaffolding</h1>
+				
+				<div style="margin: 1em">
+					<a href="https://supabase.com"><img src="assets/images/supabase.png" style="width: 150px; vertical-align: middle"></a> &nbsp;&nbsp; and
+					<a href="https://nift.dev"><img src="assets/images/nift.svg" style="width: 200px; vertical-align: middle"></a>
+				</div>
+				
+				<p>
+					<a href="https://nift.dev">Nift</a> project for scaffolding webapps with <a href="https://supabase.com">Supabase</a>.
+				</p>
+				
+				<p>
+					Enter your Supabase Project URL and Public API Key in <code>content/assets/js/supabase/auth.js</code>.
+				</p>
+				
+				<p>
+					Build the project using <code>nift build</code>.
+				</p>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/js/script.js"></script>
+		<script type="text/javascript" src="assets/js/menu.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1"></script>
+		<script type="text/javascript" src="assets/js/supabase/auth.js"></script>
+	</body>
+</html>

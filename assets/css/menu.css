@@ -1,0 +1,95 @@
+.menu-bars, .menu-cross {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  text-align: center;
+}
+
+#close-menu-icon, #open-menu-icon {
+  width: 1.5em;
+  height: 1.5em;
+  padding-top: 0em;
+}
+
+#menu-page {
+  display: none;
+  position: fixed; 
+  overflow-y: auto;
+  background: #1f2223;
+  padding-top: 1em;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+nav ul {
+  padding-left: 0px;
+  position: relative;
+}
+
+nav ul li {
+  list-style: none;
+  list-style-position: inside !important;
+}
+
+nav a {
+  font-size: 15pt;
+  color: white;
+  text-decoration: none !important;
+}
+
+.item {
+  padding: 0.5em 0px;
+}
+
+.has-submenu {
+  overflow-x: hidden;
+}
+
+.submenu-link {
+  background: transparent;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+.submenu-link::after {
+  content: url("../icons/fa-angle-down-solid.svg");
+  display: inline-block;
+  filter: invert(100%);
+  width: 1em;
+  padding-left: 5px;
+  padding-top: 5px;
+  vertical-align: middle;
+}
+.submenu-link-active::after {
+  content: url("../icons/fa-angle-up-solid.svg"); 
+}
+.submenu-link:hover::after {
+  filter: var(--filter-primary-color); 
+}
+.item-link:hover, .submenu-link:hover {
+  color: var(--primary-color);
+}
+.li-menu:hover {
+  /*background: #181a1b;*/
+}
+
+.submenu {
+  display: none;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.submenu li {
+  padding: 0.5em;
+}
+.subitem a {
+  font-size: 1em;
+}
+.subitem a:hover {
+  color: var(--primary-color);
+}

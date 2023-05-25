@@ -1,0 +1,50 @@
+/**
+ *  icon
+ */
+.fa {
+  cursor: pointer;
+  display: inline-block;
+  width: 2em;
+  vertical-align: middle;
+}
+
+/**
+ * sizes
+ */
+.fa-1x {
+  width: 1em;
+}
+.fa-1-5x {
+  width: 1.5em;
+}
+.fa-2x {
+  width: 2em;
+}
+
+/**
+ * colors
+ */
+.fa-primary-color {
+  filter: var(--filter-primary-color);
+}
+.fa-primary-color:hover {
+  filter: var(--filter-secondary-color);
+}
+
+
+/**
+ * solid
+ */
+.fa-angle-down:before {
+  content: url("../icons/fa-angle-down-solid.svg"); 
+}
+.fa-angle-up:before {
+  content: url("../icons/fa-angle-up-solid.svg"); 
+}
+.fa-bars:before {
+  content: url("../icons/fa-bars-solid.svg"); 
+}
+.fa-xmark:before {
+  content: url("../icons/fa-xmark-solid.svg"); 
+}
+
