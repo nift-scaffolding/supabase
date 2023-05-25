@@ -49,6 +49,7 @@ function signOut() {
       document.getElementById("sign-up-link").style.display = "inline";
       document.getElementById("sign-in-link").style.display = "inline";
       document.getElementById("sign-out-button").style.display = "none";
+      document.getElementById("details-link").style.display = "none";
       alert('Logout successful');
     })
     .catch((err) => {
@@ -66,6 +67,7 @@ function setToken(response) {
     document.getElementById("sign-up-link").style.display = "none";
     document.getElementById("sign-in-link").style.display = "none";
     document.getElementById("sign-out-button").style.display = "inline";
+    document.getElementById("details-link").style.display = "inline";
 
     alert('Logged in as ' + response.user.email)
   }
@@ -75,15 +77,17 @@ if(supabase.auth.user()) {
   document.getElementById("sign-up-link").style.display = "none";
   document.getElementById("sign-in-link").style.display = "none";
   document.getElementById("sign-out-button").style.display = "inline";
+  document.getElementById("details-link").style.display = "inline";
 
-  if(document.getElementById("text-area-auth-status"))
-    document.getElementById("text-area-auth-status").value = JSON.stringify(supabase.auth.user(), null, "  ");
+  if(document.getElementById("auth-details"))
+    document.getElementById("auth-details").value = JSON.stringify(supabase.auth.user(), null, "  ");
 }
 else {
   document.getElementById("sign-up-link").style.display = "inline";
   document.getElementById("sign-in-link").style.display = "inline";
   document.getElementById("sign-out-button").style.display = "none";
+  document.getElementById("details-link").style.display = "none";
 
-  if(document.getElementById("text-area-auth-status"))
-    document.getElementById("text-area-auth-status").value = "signed out";
+  if(document.getElementById("auth-details"))
+    document.getElementById("auth-details").value = "signed out";
 }

@@ -20,3 +20,13 @@
 </table>
 
 <button onclick="signIn()">sign in</button>
+
+<script>
+	document.addEventListener('keypress', (event) => {
+	  var name = event.key;
+	  var code = event.code;
+
+	  if(name == 'Enter' || code == 'Enter')
+	  	signIn();
+	}, false);
+</script>

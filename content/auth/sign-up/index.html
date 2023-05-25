@@ -29,3 +29,13 @@
 </table>
 
 <button onclick="signUp()">sign up</button>
+
+<script>
+	document.addEventListener('keypress', (event) => {
+	  var name = event.key;
+	  var code = event.code;
+
+	  if(name == 'Enter' || code == 'Enter')
+	  	signUp();
+	}, false);
+</script>
