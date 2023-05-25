@@ -55,6 +55,25 @@ body {
   /*text-align: left;*/
 }
 
+#main-page ul {
+  text-align: left;
+}
+
+ul li {
+  list-style: none;
+  list-style-position: inside !important;
+}
+
+#main-page ul li::before {
+  content: "\2022"; 
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 11pt;
+  display: inline-block; 
+  width: 1em; 
+  margin-left: 0em;
+}
+
 ::-moz-selection {
   color: var(--primary-dark);
   background-color: var(--primary-color);
@@ -91,16 +110,6 @@ button {
   background: var(--primary-color);
   border: 0px;
   border-radius: 0.25em;
-}
-
-#content ul li::before {
-  content: "\2022"; 
-  color: var(--primary-color);
-  font-weight: bold;
-  font-size: 11pt;
-  display: inline-block; 
-  width: 1em; 
-  margin-left: 0em;
 }
 
 textarea {
