@@ -1,0 +1,40 @@
+<div class="menu-bars">
+  <i id="open-menu-icon" class="fa fa-bars fa-primary-color" onclick="show_menu()"></i>
+</div>
+
+<div id="menu-page">
+  <div class="menu-cross" >
+    <i id="close-menu-icon" class="fa fa-xmark fa-primary-color" onclick="close_menu()"></i>
+  </div>
+
+  <a href="@pathto(auth/sign-up/)" id="sign-up-link"><button>sign up</button></a>
+  <a href="@pathto(auth/sign-in/)" id="sign-in-link"><button>sign in</button></a>
+  <button id="sign-out-button" onclick="signOut()">sign out</button>
+  <a href="@pathto(auth/details/)"><button>details</button></a>
+  
+  <nav id="nav" class="noselect">
+    <ul>
+      <li class="item li-menu li-dark">
+        <a class="item-link" href="@pathto(/)">home</a>
+      </li>
+      <li class="item li-menu li-dark has-submenu">
+        <button class="submenu-link" onclick="toggle_submenu(0)">submenu</button>
+        <ul class="submenu" align="center">
+          <li class="subitem"><a href="#">example</a></li>
+          <li class="subitem"><a href="#">example</a></li>
+          <li class="subitem"><a href="#">example</a></li>
+          <li class="subitem"><a href="#">example</a></li>
+        </ul>
+      </li>
+      <li class="item li-menu li-dark has-submenu">
+        <button class="submenu-link" onclick="toggle_submenu(1)">submenu</button>
+        <ul class="submenu" align="center">
+          <li class="subitem"><a href="#">example</a></li>
+          <li class="subitem"><a href="#">example</a></li>
+          <li class="subitem"><a href="#">example</a></li>
+          <li class="subitem"><a href="#">example</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

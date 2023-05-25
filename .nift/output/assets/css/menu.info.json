@@ -1,0 +1,10 @@
+{
+	"last-built": "18:38:47 Thursday May 25 2023",
+	"name": "assets/css/menu",
+	"title": "menu",
+	"template": "templates/template.css",
+	"dependencies": [
+		"content/assets/css/menu.css",
+		"templates/template.css"
+	]
+}

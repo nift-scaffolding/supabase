@@ -1,0 +1,155 @@
+:root {
+  --white: white;
+  --grey:  #3d3b36;
+  --brown: #5c5038;
+  --black: #181a1b;
+
+  --sb-green: #3ecf8e;
+
+  --filter-sb-green: invert(66%) sepia(36%) saturate(740%) hue-rotate(101deg) brightness(100%) contrast(83%);
+
+
+  --primary-dark: var(--black);
+  --secondary-dark: var(--grey);
+  --primary-color: var(--sb-green);
+  --secondary-color: var(--sb-green);
+
+  --filter-primary-color: var(--filter-sb-green);
+  --filter-secondary-color: var(--filter-sb-green);
+}
+
+html, body, div, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+header, hgroup, output, ruby,
+section, summary, time, mark, audio, video {
+  margin:  0 0 0 0;
+  line-height: 1.25em;
+  box-sizing: border-box;
+  max-width: 100%;
+
+  scrollbar-color: var(--primary-color) transparent !important;
+}
+
+body {
+  background: var(--black); 
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: "ariel";
+  max-width: 100%;
+  min-height: 100%;
+}
+
+#main-page {
+  padding: 1em;
+  overflow-y: hidden;
+  max-width: 90%;
+  width: 850px;
+  /*text-align: left;*/
+}
+
+::-moz-selection {
+  color: var(--primary-dark);
+  background-color: var(--primary-color);
+}
+
+::selection {
+  color: var(--primary-dark);
+  background-color: var(--primary-color);
+}
+
+.noselect, br, button, .fa
+{
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+button {
+  font-size: 1em;
+  color: var(--primary-dark);
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  margin: 0.25em 0.5em;
+  background: var(--primary-color);
+  border: 0px;
+  border-radius: 0.25em;
+}
+
+#content ul li::before {
+  content: "\2022"; 
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 11pt;
+  display: inline-block; 
+  width: 1em; 
+  margin-left: 0em;
+}
+
+textarea {
+  background: var(--secondary-dark);
+  color: white;
+  font-size: 1em;
+  width: 500px;
+  height: 400px;
+  max-width: 90%;
+  max-height: 70%;
+  white-space: pre;
+  overflow-x:auto;
+  resize: none;
+  padding: 0.25em 0.25em;
+  margin: 0.25em 0.5em;
+}
+
+code
+{
+  color: var(--primary-color); 
+}
+
+
+/* width */
+::-webkit-scrollbar 
+{
+  width: 8px;
+  height: 8px;
+}
+
+/* track */
+::-webkit-scrollbar-track 
+{
+  background: transparent; 
+}
+ 
+/* handle */
+::-webkit-scrollbar-thumb 
+{
+  background: var(--primary-color);
+  border-radius: 3px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+  background: var(--secondary-color); 
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

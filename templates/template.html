@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		@input("templates/head.html")
+	</head>
+
+	<body>
+		<div align="center">
+			@input("templates/menu.html")
+
+			<div id="main-page">
+				@content
+			</div>
+		</div>
+
+		<script type="text/javascript" src="@pathto(assets/js/script)"></script>
+		<script type="text/javascript" src="@pathto(assets/js/menu)"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1"></script>
+		<script type="text/javascript" src="@pathto(assets/js/supabase/auth)"></script>
+	</body>
+</html>
