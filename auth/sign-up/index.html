@@ -26,7 +26,7 @@
 			  <a href="./" id="sign-up-link"><button>sign up</button></a>
 			  <a href="../sign-in/" id="sign-in-link"><button>sign in</button></a>
 			  <button id="sign-out-button" onclick="signOut()">sign out</button>
-			  <a href="../details/"><button>details</button></a>
+			  <a href="../details/" id="details-link"><button>details</button></a>
 			  
 			  <nav id="nav" class="noselect">
 			    <ul>
@@ -87,6 +87,16 @@
 				</table>
 				
 				<button onclick="signUp()">sign up</button>
+				
+				<script>
+					document.addEventListener('keypress', (event) => {
+					  var name = event.key;
+					  var code = event.code;
+				
+					  if(name == 'Enter' || code == 'Enter')
+					  	signUp();
+					}, false);
+				</script>
 			</div>
 		</div>
 
